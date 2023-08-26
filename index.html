@@ -19,7 +19,7 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="container">
-            <a href="#" class="nav__logo">
+            <a  href="#" class="nav__logo">
                <span class="nav__logo-circle">Hr</span>
                <span class="nav__logo-name">. Oussama</span>
             </a>
@@ -379,6 +379,7 @@
                   <div class="geometric-box"></div>
 
                </div>
+            </div>
 
                <div class="contact__mail">
                   <h2 class="contact__title">
@@ -393,27 +394,54 @@
                         </div>
 
                         <div class="contact__box">
-                           <input type="email" name="user_mail" class="contact__input" id="email" placeholder="Email Address" required>
+                           <input type="email" name="user_email" class="contact__input" id="email" placeholder="Email Address" required>
                            <label for="email" class="contact__label">Email Address</label>
                         </div>
 
                         <div class="contact__box">
-                           <input type="text" name="user_name" class="contact__input" id="name" placeholder="Subject" required>
-                           <label for="name" class="contact__label">Subject</label>
+                           <input type="text" name="user_subject" class="contact__input" id="name" placeholder="Subject" required>
+                           <label for="subject" class="contact__label">Subject</label>
                         </div>
-
-                        <div class="contact__box contact__area">
-                           <input type="text" name="user_name" class="contact__input" id="name" placeholder="Message" required>
-                           <textarea name="" id="message" class="contact__input" placeholder="" required></textarea>
-                           <label for="name" class="contact__label">Message</label>
-                        </div>
-                        
                      </div>
+                     <div class="contact__box contact__area">
+                        <textarea name="user_message" id="message" class="contact__input" placeholder="Message" required></textarea>
+                        <label for="message" class="contact__label">Message</label>
+                     </div>
+                     
+                        <p class="contact__message" id="contact-message"></p>
+
+                     <button type="submit" class="contact__button button">
+                        <i class="ri-send-plane-line"></i>Send Message
+                     </button>
                   </form>
                </div>
 
                <div class="contact__social">
+                  <img src="/assets/img/curved-arrow.svg" alt="" class="contact__social-arrow">              
+                  <div class="contact__social-data">
+                     <div>
+                        <p class="contact__social-description-1">
+                           Does not send emails
+                        </p>
+                        <p class="contact__social-description-2">
+                           Write me on my social networks
+                        </p>
+                     </div>
 
+                     <div class="contact__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                           <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                           <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
+                           <i class="ri-linkedin-box-line"></i>
+                        </a>
+                     </div>
+                  </div>
                </div>
             </div>
          </section>
@@ -421,17 +449,39 @@
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <ul class="footer__links">
+
+               <li>
+                  <a href="#about" class="footer__link">About.</a>
+               </li>
+
+               <li>
+                  <a href="#service" class="footer__link">Services.</a>
+               </li>
+
+               <li>
+                  <a href="#projects" class="footer__link">Projects.</a>
+               </li>
+            </ul>
+
+            <span class="footer__copy">
+               &#169; All Rights Reserved By 
+               <a href="https://matias.ma/nsfw/" target="_blank">Hr.Oussama</a>
+            </span>
+         </div>
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-s-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
       <script src=""></script>
       
       <!--=============== EMAIL JS ===============-->
-      
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>

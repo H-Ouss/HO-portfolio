@@ -40,11 +40,43 @@ window.addEventListener('scroll', shadowHeader)
 
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+      contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) =>{
+      e.preventDefault()
+      
+      // serviceID - templateID - #form - publicKey
+      emailjs.sendForm('service_up5nh48','template_gi2bn3g','#contact-form','CwH9qz9X8TyVluNrb')
+      .then(()=>{
+        //Show Sent message
+        contactMessage.textContent = 'Message Sent Successfully ✅'
+
+        // Remove message after five seconds
+        setTimeout(() =>{
+          contactMessage.textContent = ''
+        }, 5000)
+
+          // Clear input fields
+          contactForm.reset()
+
+      }, () =>{
+        // Show error message
+        contactMessage.textContent = 'Message not sent (service error) ❌'
+
+      })
+}
+
+contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/ 
+const scrollUp = () =>{
+    const scrollUp = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                        : scrollUp.classList.remove('show-scroll')
+}
 
-
+window.addEventListener('scroll', scrollUp)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
