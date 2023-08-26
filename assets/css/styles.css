@@ -281,7 +281,7 @@ nav {
 
 .nav__link::after{
   content: '';
-  width: 25%;
+  width: 0%;
   height: 2px;
   background-color: var(--white-color);
   position: absolute;
@@ -319,7 +319,13 @@ nav {
 }
 
 /* Active link */
+.active-link{
+  color: var(--white-color);
+}
 
+.active-link:hover{
+  width: 25%;
+}
 
 /*=============== HOME ===============*/
 .home__container {
