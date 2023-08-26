@@ -240,6 +240,7 @@ nav {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 3.5rem;
+  cursor: default;
 }
 
 .nav__name {
@@ -247,6 +248,7 @@ nav {
   width: max-content;
   margin: 0 auto 3rem;
   font-size: var(--h2-font-size);
+  cursor: default;
 }
 
 .nav__name::after,
@@ -319,13 +321,13 @@ nav {
 }
 
 /* Active link */
-.active-link{
+/* .active-link{
   color: var(--white-color);
 }
 
-.active-link:hover{
+.active-link::after{
   width: 25%;
-}
+} */
 
 /*=============== HOME ===============*/
 .home__container {
