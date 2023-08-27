@@ -105,7 +105,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-  --first-color: hsl(29, 40%, 43%);
+  --first-color: hsl(177, 40%, 43%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -154,7 +154,7 @@ body.dark-theme{
   content: "";
   width: 40px;
   height: 28px;
-  background-color: hsla(22, 66%, 33%, 0.425);
+  background-color: hsla(192, 66%, 33%, 0.425);
   position: absolute;
   top: -4px;
   right: -8px;
