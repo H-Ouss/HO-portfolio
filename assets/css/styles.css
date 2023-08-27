@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(29, 53%, 43%);
+  --first-color: hsl(184, 53%, 43%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -445,8 +445,8 @@ nav {
 
 .home__description b {
   background: linear-gradient(90deg, 
-            rgb(160, 121, 86) 5%,
-            rgba(121,9,9,0) 100%);
+            rgba(86, 139, 160, 0.253) 5%,
+            rgba(240, 0, 0, 0) 100%);
 }
 
 .home__scroll{
