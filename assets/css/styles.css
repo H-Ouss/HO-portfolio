@@ -775,8 +775,9 @@ nav {
 
 .projects__buttons{
   display: flex;
-  align-items: center;
-  column-gap: 1rem;
+
+  align-items: flex-end;
+  column-gap: 20rem;
 }
 
 .projects__link{
@@ -803,6 +804,10 @@ nav {
 
 .projects__card:hover{
   background-color: var(--white-color);
+  
+}
+
+.projects__description{
   
 }
 
@@ -1553,6 +1558,7 @@ nav {
   }
 
 }
+
 
 
     
