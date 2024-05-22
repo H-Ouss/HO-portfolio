@@ -730,6 +730,9 @@ nav {
 .projects__card{
   padding: 1rem 1rem 2rem;
   transition: background-color .4s;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .projects__image{
@@ -775,9 +778,10 @@ nav {
 
 .projects__buttons{
   display: flex;
-
-  align-items: flex-end;
   column-gap: 20rem;
+  height: 100%;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .projects__link{
